@@ -316,7 +316,7 @@ function descargar(){
     ctx.restore();
 
     /* TEXTO */
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#50419a";
 
     ctx.font = "60px Solano, Arial";
 
