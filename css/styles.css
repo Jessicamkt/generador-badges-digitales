@@ -14,10 +14,15 @@
 }
 
 body{
+
   font-family:Arial, sans-serif;
+
   background:#f4f6f9;
+
   color:#1f2937;
+
   min-height:100vh;
+
 }
 
 /* =========================
@@ -72,55 +77,15 @@ body{
 
 }
 
+/* =========================
+   LEFT STEPS
+========================= */
+
 .left-steps{
 
   display:flex;
 
   justify-content:center;
-
-}
-
-.center-preview{
-
-  display:flex;
-
-  flex-direction:column;
-
-  align-items:center;
-
-}
-
-.panel{
-
-  width:100%;
-
-}
-
-/* =========================
-   TITULO
-========================= */
-
-.preview-title{
-
-  width:100%;
-
-  text-align:center;
-
-  font-size:16px;
-
-  font-weight:600;
-
-  color:#444;
-
-  margin-bottom:-20px;
-
-}
-
-/* =========================
-   STEPS CARD
-========================= */
-
-.left-steps{
 
   margin-top:40px;
 
@@ -138,8 +103,6 @@ body{
 
   box-shadow:
     0 12px 30px rgba(0,0,0,0.08);
-
-  text-align:left;
 
 }
 
@@ -210,12 +173,42 @@ body{
 }
 
 /* =========================
+   CENTER PREVIEW
+========================= */
+
+.center-preview{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+}
+
+.preview-title{
+
+  width:100%;
+
+  text-align:center;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  color:#444;
+
+  margin-bottom:-20px;
+
+}
+
+/* =========================
    BADGE
 ========================= */
 
 #credencial{
 
-  width:min(100%, 432px);
+  width:432px;
 
   aspect-ratio:432 / 540;
 
@@ -277,7 +270,7 @@ body{
   letter-spacing:1px;
 
   text-shadow:
-    0 3px 6px rgba(0,0,0,0.4);
+    0 3px 6px rgba(0,0,0,0.25);
 
 }
 
@@ -302,13 +295,12 @@ body{
   border-radius:30px;
 
   box-shadow:
-    0 12px 25px rgba(0,0,0,0.25),
-    0 0 0 4px rgba(255,255,255,0.15);
+    0 12px 25px rgba(0,0,0,0.25);
 
 }
 
 /* =========================
-   PANEL HOME
+   PANEL
 ========================= */
 
 .panel{
@@ -327,7 +319,7 @@ body{
 }
 
 /* =========================
-   FORMULARIO
+   FORM
 ========================= */
 
 label{
@@ -358,10 +350,6 @@ input{
 
   background:white;
 
-  transition:
-    border-color .3s ease,
-    box-shadow .3s ease;
-
 }
 
 input:focus{
@@ -376,7 +364,7 @@ input:focus{
 }
 
 /* =========================
-   BOTONES
+   BUTTONS
 ========================= */
 
 button{
@@ -399,10 +387,7 @@ button{
 
   color:white;
 
-  transition:
-    transform .25s ease,
-    background .25s ease,
-    opacity .25s ease;
+  transition:.25s;
 
 }
 
@@ -412,58 +397,21 @@ button:hover{
 
 }
 
-button:active{
-
-  transform:scale(0.98);
-
-}
-
-button:disabled{
-
-  opacity:.6;
-
-  cursor:not-allowed;
-
-}
-
 #btnDescargar{
 
   background:#7ac6dc;
 
 }
 
-#btnDescargar:hover{
-
-  background:#0077b5;
-
-}
-
-.copy-btn{
-
-  background:#1c51a0;
-
-}
-
-.copy-btn:hover{
-
-  background:#0077b5;
-
-}
-
+.copy-btn,
 .linkedin-btn{
 
   background:#1c51a0;
 
 }
 
-.linkedin-btn:hover{
-
-  background:#0077b5;
-
-}
-
 /* =========================
-   MICROCOPY
+   COPY
 ========================= */
 
 .microcopy{
@@ -479,10 +427,6 @@ button:disabled{
   line-height:1.5;
 
 }
-
-/* =========================
-   COPY LINKEDIN
-========================= */
 
 .copy-title{
 
@@ -523,50 +467,20 @@ button:disabled{
 }
 
 /* =========================
-   LOADER
+   SUCCESS
 ========================= */
 
-.loader{
+.success{
 
   display:none;
 
-  margin-top:14px;
+  margin-top:12px;
 
-  text-align:center;
+  font-size:14px;
 
-  font-size:13px;
+  font-weight:600;
 
-  color:#444;
-
-}
-
-.spinner{
-
-  width:24px;
-
-  height:24px;
-
-  margin:10px auto;
-
-  border:3px solid #eee;
-
-  border-top:3px solid #4B2E83;
-
-  border-radius:50%;
-
-  animation:spin 1s linear infinite;
-
-}
-
-@keyframes spin{
-
-  0%{
-    transform:rotate(0deg);
-  }
-
-  100%{
-    transform:rotate(360deg);
-  }
+  color:#111827;
 
 }
 
@@ -594,9 +508,6 @@ button:disabled{
 
   font-weight:600;
 
-  box-shadow:
-    0 10px 25px rgba(0,0,0,0.15);
-
   opacity:0;
 
   pointer-events:none;
@@ -618,219 +529,8 @@ button:disabled{
 }
 
 /* =========================
-   DASHBOARD PAGE
+   DASHBOARD
 ========================= */
-
-.dashboard-page .container{
-
-  width:100%;
-
-  max-width:1400px;
-
-  margin:auto;
-
-  padding:40px;
-
-}
-
-.dashboard-page .panel{
-
-  width:100%;
-
-  max-width:1400px;
-
-  background:white;
-
-  padding:40px;
-
-  border-radius:24px;
-
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.1);
-
-}
-
-/* =========================
-   DASHBOARD GRID
-========================= */
-
-.dashboard-grid{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(220px,1fr));
-
-  gap:24px;
-
-  margin-top:30px;
-
-}
-
-/* =========================
-   STATS CARDS
-========================= */
-
-.stat-card{
-
-  background:
-    linear-gradient(
-      135deg,
-      #ffffff,
-      #f8f9fc
-    );
-
-  border-radius:24px;
-
-  padding:35px 25px;
-
-  text-align:center;
-
-  box-shadow:
-    0 12px 30px rgba(0,0,0,0.08);
-
-  transition:
-    transform .3s ease,
-    box-shadow .3s ease;
-
-}
-
-.stat-card:hover{
-
-  transform:
-    translateY(-6px);
-
-  box-shadow:
-    0 18px 40px rgba(0,0,0,0.12);
-
-}
-
-.stat-icon{
-
-  font-size:38px;
-
-  margin-bottom:16px;
-
-}
-
-.stat-number{
-
-  font-size:54px;
-
-  font-weight:bold;
-
-  color:#4B2E83;
-
-}
-
-.stat-number.small{
-
-  font-size:24px;
-
-  line-height:1.4;
-
-}
-
-.stat-label{
-
-  margin-top:12px;
-
-  font-size:15px;
-
-  color:#666;
-
-  font-weight:600;
-
-}
-
-/* =========================
-   CHART
-========================= */
-
-#badgesChart{
-
-  margin-top:40px;
-
-  background:white;
-
-  padding:20px;
-
-  border-radius:24px;
-
-  box-shadow:
-    0 12px 30px rgba(0,0,0,0.08);
-
-  width:100% !important;
-
-  height:350px !important;
-
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:900px){
-
-  .dashboard-grid{
-
-    grid-template-columns:1fr;
-
-  }
-
-}
-
-
-/* =========================
-   FEEDBACK SUCCESS
-========================= */
-
-.success{
-
-  display:none;
-
-  margin-top:12px;
-
-  font-size:14px;
-
-  font-weight:600;
-
-  color:#111827;
-
-}
-
-/* =========================
-   DASHBOARD ONLY
-========================= */
-
-.dashboard-container{
-
-  width:100%;
-
-  max-width:1400px;
-
-  margin:auto;
-
-  padding:40px;
-
-}
-
-.dashboard-panel{
-
-  width:100%;
-
-  background:white;
-
-  padding:40px;
-
-  border-radius:24px;
-
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.08);
-
-}
-
-/* GRID */
 
 .dashboard-grid{
 
@@ -845,21 +545,27 @@ button:disabled{
 
 }
 
-/* CHART */
+/* =========================
+   RESPONSIVE TABLET
+========================= */
 
-#badgesChart{
+@media(max-width:1100px){
 
-  margin-top:40px;
+  .container{
 
-  width:100% !important;
+    grid-template-columns:1fr;
 
-  max-height:350px !important;
+    justify-items:center;
 
-  background:white;
+  }
 
-  border-radius:24px;
+  .panel{
 
-  padding:20px;
+    width:100%;
+
+    max-width:520px;
+
+  }
 
 }
 
@@ -867,7 +573,17 @@ button:disabled{
    RESPONSIVE MOBILE
 ========================= */
 
-@media (max-width:768px){
+@media(max-width:768px){
+
+  .header{
+
+    font-size:16px;
+
+    padding:18px;
+
+    line-height:1.4;
+
+  }
 
   .container{
 
@@ -885,11 +601,13 @@ button:disabled{
 
   .left-steps{
 
+    width:100%;
+
     display:flex;
 
     justify-content:center;
 
-    width:100%;
+    margin-top:0;
 
   }
 
@@ -903,13 +621,11 @@ button:disabled{
 
   .center-preview{
 
+    width:100%;
+
     display:flex;
 
-    flex-direction:column;
-
     align-items:center;
-
-    width:100%;
 
   }
 
@@ -919,17 +635,15 @@ button:disabled{
 
     max-width:100%;
 
-    margin:0 auto;
+    margin:20px auto;
 
   }
 
-  .panel{
+  #previewNombre{
 
-    width:100%;
+    font-size:14px;
 
-    max-width:380px;
-
-    padding:24px;
+    top:105px;
 
   }
 
@@ -939,19 +653,22 @@ button:disabled{
 
     height:170px;
 
-    top:160px;
+    top:145px;
 
   }
 
-  #previewNombre{
+  .panel{
 
-    font-size:14px;
+    width:100%;
+
+    max-width:380px;
+
+    padding:22px;
 
   }
 
   input,
-  button,
-  textarea{
+  button{
 
     width:100%;
 
@@ -959,25 +676,17 @@ button:disabled{
 
   .copy-box{
 
-    height:220px;
+    max-height:220px;
 
-  }
-
-  .header{
-
-    font-size:18px;
-
-    text-align:center;
-
-    padding:18px;
+    font-size:13px;
 
   }
 
   #toast{
 
-    right:10px;
-
     left:10px;
+
+    right:10px;
 
     top:10px;
 
