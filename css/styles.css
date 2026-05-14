@@ -862,6 +862,7 @@ button:disabled{
   padding:20px;
 
 }
+
 /* =========================
    RESPONSIVE MOBILE
 ========================= */
@@ -870,7 +871,11 @@ button:disabled{
 
   .container{
 
-    grid-template-columns:1fr;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
 
     padding:20px;
 
@@ -883,6 +888,8 @@ button:disabled{
     display:flex;
 
     justify-content:center;
+
+    width:100%;
 
   }
 
@@ -902,19 +909,25 @@ button:disabled{
 
     align-items:center;
 
+    width:100%;
+
   }
 
   #credencial{
 
-    width:100%;
+    width:320px;
 
-    max-width:320px;
+    max-width:100%;
+
+    margin:0 auto;
 
   }
 
   .panel{
 
     width:100%;
+
+    max-width:380px;
 
     padding:24px;
 
