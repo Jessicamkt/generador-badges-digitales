@@ -325,7 +325,7 @@ function descargar(){
     ctx.fillText(
       nombre.toUpperCase(),
       540,
-      320
+      350
     );
 
     /* DESCARGA */
