@@ -527,7 +527,45 @@ button:hover{
   transform:translateY(0);
 
 }
+.loader{
 
+  display:none;
+
+  margin-top:14px;
+
+  text-align:center;
+
+  font-size:14px;
+
+  color:#555;
+
+}
+
+.spinner{
+
+  width:24px;
+
+  height:24px;
+
+  border:3px solid #ddd;
+
+  border-top:3px solid #4B2E83;
+
+  border-radius:50%;
+
+  margin:0 auto 10px;
+
+  animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+  100%{
+    transform:rotate(360deg);
+  }
+
+}
 /* =========================
    DASHBOARD
 ========================= */
