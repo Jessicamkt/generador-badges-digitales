@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Generador de Badges Marketing Leaders</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="header">
+GENERADOR DE BADGES MARKETING LEADERS
+</div>
+
+<div class="container">
+
+  <!-- PASOS -->
+  <div class="left-steps">
+
+    <div class="steps-card">
+
+      <h3 class="steps-title">
+        ¿Cómo funciona?
+      </h3>
+
+      <div class="step-item">
+        <div class="step-number">1</div>
+
+        <div class="step-text">
+          <strong>Personaliza tu badge</strong>
+          <span>Ingresa tu nombre.</span>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">2</div>
+
+        <div class="step-text">
+          <strong>Sube tu mejor foto</strong>
+          <span>Imagen tipo LinkedIn.</span>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">3</div>
+
+        <div class="step-text">
+          <strong>Genera tu badge</strong>
+          <span>Descárgalo y compártelo.</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BADGE -->
+  <div class="center-preview">
+
+    <h3 class="preview-title">
+      Vista previa de tu badge
+    </h3>
+
+    <div id="credencial">
+
+      <div id="previewNombre"></div>
+
+      <img
+        id="previewFoto"
+        alt="preview"
+      >
+
+    </div>
+
+  </div>
+
+<div class="panel">
+
+<label>Nombre que aparecerá en tu badge</label>
+<input type="text" id="nombreInput" placeholder="Ej: Jessica Sánchez">
+
+<label>Sube una foto profesional</label>
+<input type="file" id="fotoInput" accept="image/png, image/jpeg">
+<div id="fotoOk" class="success">✔ Foto cargada correctamente</div>
+
+<button id="btnDescargar">Generar mi badge</button>
+
+<div class="microcopy">
+Comparte tu badge y muestra tu crecimiento profesional a tu red.
+</div>
+
+<div class="loader" id="loader">
+<div class="spinner"></div>
+Generando credencial...
+</div>
+
+<div id="badgeOk" class="success">✔ Badge generado correctamente</div>
+
+<div class="copy-title">
+🚀 Copy sugerido para LinkedIn
+</div>
+<div class="copy-box" id="copyText">
+Hoy doy un nuevo paso en mi crecimiento profesional 🚀
+Formo parte de Marketing Leaders, una comunidad impulsada por Marketeamlab enfocada en el desarrollo de habilidades digitales, marketing y crecimiento profesional.
+A través de este espacio busco seguir aprendiendo, fortalecer mis conocimientos y conectar con nuevas oportunidades en el mundo digital.
+Muy pronto estaré compartiendo avances, aprendizajes y proyectos relacionados con esta experiencia.
+
+#MarketingLeaders #DigitalSkills  #GrowthMindset
+</div>
+
+<button class="copy-btn" id="btnCopy">
+  Copiar texto
+</button>
+
+<button class="linkedin-btn" id="btnLinkedin">
+  Abrir LinkedIn
+</button>
+
+
+
+<div class="success" id="copySuccess">✔ Copy copiado</div>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+<div id="toast"></div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Badge Analytics</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="dashboard-page">
+
+  <div class="header">
+    Badge Analytics Dashboard
+  </div>
+
+  <div class="dashboard-container">
+
+  <div class="dashboard-panel">
+
+      <h2 class="copy-title">
+        📊 Estadísticas de uso
+      </h2>
+
+      <!-- DASHBOARD -->
+      <div id="statsContainer"></div>
+
+      <!-- GRÁFICO -->
+      <canvas id="badgesChart"></canvas>
+
+      <!-- BOTÓN -->
+      <a href="index.html">
+
+        <button class="linkedin-btn">
+
+          Volver al generador
+
+        </button>
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- CHART JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JS -->
+  <script src="js/stats.js"></script>
+
+</body>
+
+</html>
